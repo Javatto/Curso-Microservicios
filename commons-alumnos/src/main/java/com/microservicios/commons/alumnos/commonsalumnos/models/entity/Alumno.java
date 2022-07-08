@@ -1,6 +1,4 @@
-package com.microservicios.app.usuarios.models.entity;
-
-//MODELS sirve para definir el modelo de la tabla que usaremos para traer sus datos
+package com.microservicios.commons.alumnos.commonsalumnos.models.entity;
 
 import java.util.Date;
 
@@ -65,5 +63,20 @@ public class Alumno {
     public void setApellido(String apellido) {
         this.apellido = apellido;
     }
+
+    @Override
+    public boolean equals(Object obj) {
+        if(this == obj){
+            return true;
+        }
+        if(!(obj instanceof Alumno)){
+            return false;
+        }
+
+        Alumno a = (Alumno)obj;
+
+        return this.id != null && this.id.equals(a.getId());
+    }
+    
 
 }

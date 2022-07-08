@@ -1,0 +1,44 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciosEurekaApplication<microservicios-eureka>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.microservicios.app.eureka.MicroserviciosEurekaApplication",
+            "projectName": "microservicios-eureka",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciosUsuariosApplication<microservicios-usuarios>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.microservicios.app.usuarios.MicroserviciosUsuariosApplication",
+            "projectName": "microservicios-usuarios",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciosZuulApplication<microservicios-zuul>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.microservicios.app.zuul.MicroserviciosZuulApplication",
+            "projectName": "microservicios-zuul",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        },
+        {
+            "type": "java",
+            "name": "Spring Boot-MicroserviciosCursosApplication<microservicios-cursos>",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "mainClass": "com.microservicios.app.cursos.MicroserviciosCursosApplication",
+            "projectName": "microservicios-cursos",
+            "args": "",
+            "envFile": "${workspaceFolder}/.env"
+        }
+    ]
+}

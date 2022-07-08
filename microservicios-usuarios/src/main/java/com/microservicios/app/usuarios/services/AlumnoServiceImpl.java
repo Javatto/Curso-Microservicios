@@ -1,13 +1,25 @@
 package com.microservicios.app.usuarios.services;
 
-import org.springframework.stereotype.Service;
+import java.util.List;
 
-import com.microservicios.app.usuarios.models.entity.Alumno;
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
+
 import com.microservicios.app.usuarios.models.repository.AlumnoRepository;
+import com.microservicios.commons.alumnos.commonsalumnos.models.entity.Alumno;
 import com.microservicios.commons.service.CommonServiceImpl;
 
 @Service
 public class AlumnoServiceImpl extends CommonServiceImpl<Alumno, AlumnoRepository> implements AlumnoService {
+
+    @Override
+    @Transactional(readOnly = true)
+    public List<Alumno> findByNombreOrApellido(String texto) {
+
+        repository.findByNombreOrApellido(texto);
+ 
+        return null;
+    }
 	
  
 }

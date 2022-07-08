@@ -16,7 +16,7 @@ import com.microservicios.commons.service.CommonService;
 public class CommonController<E,S extends CommonService<E>> {
     
     @Autowired
-    private S service;
+    protected S service;
 
     //** ruta / y llamamos al servicio que lista todo*/ 
     @GetMapping
