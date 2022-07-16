@@ -15,10 +15,7 @@ public class AlumnoServiceImpl extends CommonServiceImpl<Alumno, AlumnoRepositor
     @Override
     @Transactional(readOnly = true)
     public List<Alumno> findByNombreOrApellido(String texto) {
-
-        repository.findByNombreOrApellido(texto);
- 
-        return null;
+        return repository.findByNombreOrApellido(texto);
     }
 	
  

@@ -34,7 +34,7 @@ public class AlumnoController extends CommonController<Alumno,AlumnoService>{
 
     @GetMapping("/filtrar/{texto}")
     public ResponseEntity<?> filtrar(@PathVariable String texto){
-        
+        return ResponseEntity.ok(service.findByNombreOrApellido(texto));
     }
 
 }
